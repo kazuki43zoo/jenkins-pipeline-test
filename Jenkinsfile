@@ -15,7 +15,7 @@ pipeline {
           },
           "integration-test": {
             echo 'perform integration test.'
-            sh './test.sh'
+            sh 'sh ./test.sh'
             
           }
         )
