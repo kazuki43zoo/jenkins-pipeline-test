@@ -1,16 +1,24 @@
 pipeline {
   stages {
     stage('build') {
-      echo 'build artifact.'
+      steps {
+        echo 'build artifact.'
+      }
     }
     stage('unit-test') {
-      echo 'perform unit test.'
+      steps {       
+        echo 'perform unit test.'
+      }
     }
     stage('integration-test') {
-      echo 'perform integration test.'
+      steps {
+        echo 'perform integration test.'
+      }
     }
     stage('deploy') {
-      echo 'deploy artifact.'
+      steps {
+        echo 'deploy artifact.'
+      }
     }
   }
 }
